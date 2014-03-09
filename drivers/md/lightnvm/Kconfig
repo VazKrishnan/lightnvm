@@ -12,3 +12,12 @@ config LIGHTNVM
 
 		If unsure, say N.
 
+config LIGHTNVM_HINTS
+	tristate "Application hints (EXPERIMENTAL)"
+	depends on LIGHTNVM
+	---help---
+		Implements swap, latency and pack hints within the LightNVM
+		layer.
+
+		If unsure, say N.
+
